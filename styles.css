@@ -1,0 +1,176 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    font-weight: 600;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+}
+
+.estudiante-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.estudiante-card:hover {
+    background: #e9ecef;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.estudiante-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.estudiante-info h4 {
+    margin: 0;
+    color: #495057;
+    font-weight: 600;
+}
+
+.estudiante-info p {
+    margin: 0.25rem 0 0 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.promedio-badge {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.btn-eliminar {
+    margin-top: 0.5rem;
+}
+
+.notas-list {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.nota-item {
+    background: white;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #28a745;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nota-item:hover {
+    background: #f8f9fa;
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nota-info {
+    flex: 1;
+}
+
+.nota-materia {
+    font-weight: 600;
+    color: #495057;
+    margin: 0;
+}
+
+.nota-valor {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #28a745;
+    min-width: 60px;
+    text-align: right;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5568d3 0%, #653a8f 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.btn-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.4);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 3rem;
+    color: #6c757d;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .estudiante-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .promedio-badge {
+        margin-top: 0.5rem;
+    }
+}
+
